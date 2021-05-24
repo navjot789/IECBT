@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reading</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+html, body {
+  height: 100%;
+}
+.header {
+  background: #555;
+  color: #f1f1f1;
+  z-index: 1;
+  position: fixed;
+}
+
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  right: 0;
+  background-color: #111;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: scroll;
+}
+
+
+.openbtn {
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+
+.feedback-open {
+   position: fixed;
+   right: 0;
+   bottom: 95%;
+   height: 30px;
+   width: 80px;
+   z-index: 1;
+   background-color: #ccc;
+   color: #FFF;
+    border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+
+.feedback-close {
+   position: fixed;
+   right: 0;
+   bottom: 90%;
+   height: 30px;
+   width: 80px;
+   z-index: 1;
+   background-color: #ccc;
+   color: #FFF;
+   border-bottom-left-radius: 4px;
+   border-top-left-radius: 4px;
+}
+
+
+</style>
+</head>
+<body class="text-muted" style="background: #181a1b;">
+
+<div class="container-fluid">
+<div id="mySidepanel" class="sidepanel">
+
+	<div class="feedback-open openbtn" onclick="openNav()">
+	 <span class="ml-2"> <a href="javascript:void(0)" >Open</a></span>
+	</div>
+
+	<div class="feedback-close closebtn" onclick="closeNav()">
+	 <span class="ml-2"> <a href="javascript:void(0)" >Close</a></span>
+	</div>
+
+ <div class="container">
+	<div class="row">
+		<div class="col-md-12" >
+			<h6 class="text-center">Answer-sheet</h6>
+				 <div class="form-group">
+				    <label>1</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >2</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				   <div class="form-group">
+				    <label>3</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >4</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>5</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >6</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>7</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >8</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				<div class="form-group">
+				    <label>9</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >10</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				   <div class="form-group">
+				    <label>11</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >12</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>13</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >14</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>15</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >16</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				<div class="form-group">
+				    <label>17</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >18</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				   <div class="form-group">
+				    <label>19</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >20</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>21</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >22</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>23</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >24</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				<div class="form-group">
+				    <label>25</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >26</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				   <div class="form-group">
+				    <label>27</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >28</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>29</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >30</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+				 <div class="form-group">
+				    <label>31</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >32</label>
+				    <input type="text" class="form-control" >
+				  </div>
+
+				   <div class="form-group">
+				    <label>33</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >34</label>
+				    <input type="text" class="form-control" >
+				  </div>
+
+				   <div class="form-group">
+				    <label>35</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >36</label>
+				    <input type="text" class="form-control" >
+				  </div>
+
+				   <div class="form-group">
+				    <label>37</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >38</label>
+				    <input type="text" class="form-control" >
+				  </div>
+
+				   <div class="form-group">
+				    <label>39</label>
+				    <input type="text" class="form-control"  >
+				  </div>
+				   <div class="form-group">
+				    <label >40</label>
+				    <input type="text" class="form-control" >
+				  </div>
+				
+		</div>
+		
+	</div>
+	
+</div>
+</div>
+
+<div class="row header" >
+	  <div class="col-md-12 mt-2 ml-2">
+		<p>
+		  <a class="btn btn-sm btn-primary" data-toggle="collapse" href="#section-1" role="button" aria-expanded="false" aria-controls="section-1">Section 1</a>
+		  
+		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#section-2" aria-expanded="false" aria-controls="section-2">Section 2</button>
+
+		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#section-3" aria-expanded="false" aria-controls="section-3">Section 3</button>
+
+		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="section-1 section-2 section-3">Toggle all sections</button>
+
+		</p>
+	</div>
+</div>
+
+
+	<div class="row">
+	  <div class="col">
+	    <div class="collapse show multi-collapse " id="section-1">
+	      <div class="card card-body" style="background: black;">
+	       
+
+	      	<div class="row">
+
+				<div class="col-md-6" style="background: ;">
+					<h1 class="text-center">Section 1</h1>
+
+					<img class="img-fluid" src="p1/p11.jpg" alt="">
+					<img class="img-fluid" src="p1/p12.jpg" alt="">
+    
+				</div>
+
+				<div class="col-md-6" style="background: ;">
+					<h1 class="text-center">Questions section 1</h1>
+					<img class="img-fluid" src="p1/q1.jpg" alt="">
+					
+				</div>
+				
+			</div>
+
+
+	      </div>
+	    </div>
+	  </div>
+	  
+	</div>
+
+   <div class="row">
+	<div class="col">
+	    <div class="collapse multi-collapse" id="section-2">
+	      <div class="card card-body" style="background: black;">
+	        
+	      	<div class="row">
+
+				<div class="col-md-6" style="background: ;">
+					<h1 class="text-center">Section 2</h1>
+
+					<img class="img-fluid" src="p2/p21.jpg" alt="">
+					<img class="img-fluid" src="p2/p22.jpg" alt="">
+					
+					
+					
+				
+				</div>
+
+				<div class="col-md-6" style="background: ;">
+					<h1 class="text-center">Questions section 2</h1>
+					<img class="img-fluid" src="p2/q1.jpg" alt="">
+					<img class="img-fluid" src="p2/q2.jpg" alt="">
+					
+					
+				</div>
+				
+			</div>
+
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="row">
+	<div class="col">
+	    <div class="collapse multi-collapse" id="section-3">
+	      <div class="card card-body" style="background: black;">
+	        
+	      		<div class="row">
+
+					<div class="col-md-6" style="background: ;">
+						<h1 class="text-center">Section 3</h1>
+
+						<img class="img-fluid" src="p3/p31.jpg" alt="">
+						<img class="img-fluid" src="p3/p32.jpg" alt="">
+						
+						
+					
+					</div>
+
+					<div class="col-md-6" style="background: ;">
+						<h1 class="text-center">Questions section 3</h1>
+						<img class="img-fluid" src="p3/q1.jpg" alt="">
+						<img class="img-fluid" src="p3/q2.jpg" alt="">
+						
+						
+					</div>
+					
+				</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<!--Bottom Footer-->
+		<div class="bottom section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center mt-2">
+						<div class="copyright">
+							<p> Developed by <a href="https://www.youtube.com/c/codelone" class="transition" target="_blank"> Codelone</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!--Bottom Footer-->	
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+</script>
+
+</body>
+</html>
