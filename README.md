@@ -1,4 +1,4 @@
-# IELTS-CBT-MODULES
+# IECBT - (International English computer based test)
 IELTS-CBT-READING is a module for IELTS candidates who wanted to go after computer based IELTS test. This reading module will provide 40 preloaded IELTS MAKKAR readings, that can help those, who wanted to improve his/her reading skills. Due to lack of material required for CBT online, many candidates struggle to find computer based readings. This software can help to convert paper based readings into computer based easily.   
 # READING
 ![image](https://user-images.githubusercontent.com/37342043/119652694-10922980-be44-11eb-809d-cdf875df7345.png)
