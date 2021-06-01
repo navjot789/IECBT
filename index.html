@@ -1,413 +1,476 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Reading</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<style>
-html, body {
-  height: 100%;
-}
-.header {
-  background: #555;
-  color: #f1f1f1;
-  z-index: 1;
-  position: fixed;
-}
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-.sidepanel {
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  height: 100%;
-  right: 0;
-  background-color: #111;
-  transition: 0.5s;
-  padding-top: 60px;
-  overflow-y: scroll;
-}
+  <title>IELTS - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-.openbtn {
-  cursor: pointer;
-  color: white;
-  border: none;
-}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-.feedback-open {
-   position: fixed;
-   right: 0;
-   bottom: 95%;
-   height: 30px;
-   width: 80px;
-   z-index: 1;
-   background-color: #ccc;
-   color: #FFF;
-    border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
-}
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-.feedback-close {
-   position: fixed;
-   right: 0;
-   bottom: 90%;
-   height: 30px;
-   width: 80px;
-   z-index: 1;
-   background-color: #ccc;
-   color: #FFF;
-   border-bottom-left-radius: 4px;
-   border-top-left-radius: 4px;
-}
-
-
-</style>
+  <!-- =======================================================
+  * Template Name: Flexor - v2.4.1
+  * Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body class="text-muted" style="background: #181a1b;">
 
-<div class="container-fluid">
-<div id="mySidepanel" class="sidepanel">
+<body>
 
-	<div class="feedback-open openbtn" onclick="openNav()">
-	 <span class="ml-2"> <a href="javascript:void(0)" >Open</a></span>
-	</div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex">
 
-	<div class="feedback-close closebtn" onclick="closeNav()">
-	 <span class="ml-2"> <a href="javascript:void(0)" >Close</a></span>
-	</div>
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Asad</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
 
- <div class="container">
-	<div class="row">
-		<div class="col-md-12" >
-			<h6 class="text-center">Answer-sheet</h6>
-				 <div class="form-group">
-				    <label>1</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >2</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				   <div class="form-group">
-				    <label>3</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >4</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>5</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >6</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>7</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >8</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				<div class="form-group">
-				    <label>9</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >10</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				   <div class="form-group">
-				    <label>11</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >12</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>13</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >14</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>15</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >16</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				<div class="form-group">
-				    <label>17</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >18</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				   <div class="form-group">
-				    <label>19</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >20</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>21</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >22</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>23</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >24</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				<div class="form-group">
-				    <label>25</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >26</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				   <div class="form-group">
-				    <label>27</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >28</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>29</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >30</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-				 <div class="form-group">
-				    <label>31</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >32</label>
-				    <input type="text" class="form-control" >
-				  </div>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+             <li><a href="#practice">Practice Test</a></li>
+       
+          <li><a href="#contact">Contact</a></li>
 
-				   <div class="form-group">
-				    <label>33</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >34</label>
-				    <input type="text" class="form-control" >
-				  </div>
+        </ul>
+      </nav><!-- .nav-menu -->
 
-				   <div class="form-group">
-				    <label>35</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >36</label>
-				    <input type="text" class="form-control" >
-				  </div>
+    </div>
+  </header><!-- End Header -->
 
-				   <div class="form-group">
-				    <label>37</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >38</label>
-				    <input type="text" class="form-control" >
-				  </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="container" data-aos="fade-in">
+      <h1>Welcome to Flexor</h1>
+      <h2>We are team of talented designers making websites with Bootstrap</h2>
+      <div class="d-flex align-items-center">
+        <i class="bx bxs-right-arrow-alt get-started-icon"></i>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
 
-				   <div class="form-group">
-				    <label>39</label>
-				    <input type="text" class="form-control"  >
-				  </div>
-				   <div class="form-group">
-				    <label >40</label>
-				    <input type="text" class="form-control" >
-				  </div>
-				
-		</div>
-		
-	</div>
-	
-</div>
-</div>
+  <main id="main">
 
-<div class="row header" >
-	  <div class="col-md-12 mt-2 ml-2">
-		<p>
-		  <a class="btn btn-sm btn-primary" data-toggle="collapse" href="#section-1" role="button" aria-expanded="false" aria-controls="section-1">Section 1</a>
-		  
-		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#section-2" aria-expanded="false" aria-controls="section-2">Section 2</button>
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
 
-		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target="#section-3" aria-expanded="false" aria-controls="section-3">Section 3</button>
+        <div class="row">
+          <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+            <div class="content">
+              <h3>Why Choose Flexor for your company website?</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+              </p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-lg-7 d-flex">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Corporis voluptates sit</h4>
+                    <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Ullamco laboris ladore pan</h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-images"></i>
+                    <h4>Labore consequatur</h4>
+                    <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		  <button class="btn btn-sm btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="section-1 section-2 section-3">Toggle all sections</button>
-
-		</p>
-	</div>
-</div>
+      </div>
+    </section><!-- End Why Us Section -->
 
 
-	<div class="row">
-	  <div class="col">
-	    <div class="collapse show multi-collapse " id="section-1">
-	      <div class="card card-body" style="background: black;">
-	       
+    <!-- ======= practice Section ======= -->
+    <section id="practice" class="values">
+      <div class="container">
 
-	      	<div class="row">
+         <div class="section-title">
+          <h2 data-aos="fade-up">Computer-delivered IELTS Practice Tests</h2>
+          <p data-aos="fade-up">Prepare for IELTS with these free practice tests and answers. Time yourself and develop your exam technique.</p>
+        </div>
 
-				<div class="col-md-6" style="background: ;">
-					<h1 class="text-center">Section 1</h1>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="card" style="background-image: url(assets/img/values-1.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Reading (Academic)</a></h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+                <div class="read-more"><a href="reading.php"><i class="icofont-arrow-right"></i> Start test</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="card" style="background-image: url(assets/img/values-4.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Listning</a></h5>
+                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Start test</a></div>
+              </div>
+            </div>
 
-					<img class="img-fluid" src="p1/p11.jpg" alt="">
-					<img class="img-fluid" src="p1/p12.jpg" alt="">
-    
-				</div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card" style="background-image: url(assets/img/values-3.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Writing (Academic)</a></h5>
+                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Start test</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card" style="background-image: url(assets/img/values-4.jpg);">
+              <div class="card-body">
+                <h5 class="card-title"><a href="">Speaking</a></h5>
+                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem.</p>
+                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Start test</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-6" style="background: ;">
-					<h1 class="text-center">Questions section 1</h1>
-					<img class="img-fluid" src="p1/q1.jpg" alt="">
-					
-				</div>
-				
-			</div>
+      </div>
+    </section><!-- End Values Section -->
 
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
 
-	      </div>
-	    </div>
-	  </div>
-	  
-	</div>
+        <div class="owl-carousel testimonials-carousel">
 
-   <div class="row">
-	<div class="col">
-	    <div class="collapse multi-collapse" id="section-2">
-	      <div class="card card-body" style="background: black;">
-	        
-	      	<div class="row">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
 
-				<div class="col-md-6" style="background: ;">
-					<h1 class="text-center">Section 2</h1>
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
 
-					<img class="img-fluid" src="p2/p21.jpg" alt="">
-					<img class="img-fluid" src="p2/p22.jpg" alt="">
-					
-					
-					
-				
-				</div>
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
 
-				<div class="col-md-6" style="background: ;">
-					<h1 class="text-center">Questions section 2</h1>
-					<img class="img-fluid" src="p2/q1.jpg" alt="">
-					<img class="img-fluid" src="p2/q2.jpg" alt="">
-					
-					
-				</div>
-				
-			</div>
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
 
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
 
-	      </div>
-	    </div>
-	  </div>
-	</div>
+        </div>
 
-	<div class="row">
-	<div class="col">
-	    <div class="collapse multi-collapse" id="section-3">
-	      <div class="card card-body" style="background: black;">
-	        
-	      		<div class="row">
-
-					<div class="col-md-6" style="background: ;">
-						<h1 class="text-center">Section 3</h1>
-
-						<img class="img-fluid" src="p3/p31.jpg" alt="">
-						<img class="img-fluid" src="p3/p32.jpg" alt="">
-						
-						
-					
-					</div>
-
-					<div class="col-md-6" style="background: ;">
-						<h1 class="text-center">Questions section 3</h1>
-						<img class="img-fluid" src="p3/q1.jpg" alt="">
-						<img class="img-fluid" src="p3/q2.jpg" alt="">
-						
-						
-					</div>
-					
-				</div>
-
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	
-	<!--Bottom Footer-->
-		<div class="bottom section-padding">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center mt-2">
-						<div class="copyright">
-							<p> Developed by <a href="https://www.youtube.com/c/codelone" class="transition" target="_blank"> Codelone</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-<!--Bottom Footer-->	
-	
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
-<script>
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}
+      </div>
+    </section><!-- End Testimonials Section -->
 
 
-</script>
+   
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up">F.A.Q</h2>
+          <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 data-aos="fade-up">Contact</h2>
+          <p data-aos="fade-up">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up">
+            <div class="info-box">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-box">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 mt-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-box">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-9 col-lg-12 mt-4">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Flexor</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-lg-flex py-4">
+
+      <div class="mr-lg-auto text-center text-lg-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Flexor</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
